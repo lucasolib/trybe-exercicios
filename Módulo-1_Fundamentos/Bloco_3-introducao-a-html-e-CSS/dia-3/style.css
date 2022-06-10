@@ -8,8 +8,6 @@ h1 {
   height: 50px;
   text-align: center;
   width: 200px;
-  display: inline-block;
-  
 }
 
 .second {
@@ -26,4 +24,23 @@ h1 {
   height: 50px;
   text-align: center;
   width: 300px;
+}
+
+.first {
+    display: inline-block;
+    margin-left: 530px;
+    margin-right: 300px;
+}
+
+.second {
+    display: inline-block;
+    margin-left: 330px;
+}
+
+.third {
+    display: inline-block;
+}
+
+.prem {
+    display: inline-block;
 }
