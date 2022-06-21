@@ -1,12 +1,14 @@
 // Ângulos e triângulos
 const a = 90;
-const b = 45;
-const c = 48;
-const ang = 180;
+const b = -43;
+const c = 45;
 
-if (ang == a + b + c) {
-    console.log("É um triângulo");
+if (180 == a + b + c) {
+    console.log("True");
+}
+else if (a < 0 || b < 0 || c < 0) {
+    console.log("Erro: ângulo inválido");
 }
 else {
-    console.log("Não é um triângulo");
+    console.log("false");
 }
