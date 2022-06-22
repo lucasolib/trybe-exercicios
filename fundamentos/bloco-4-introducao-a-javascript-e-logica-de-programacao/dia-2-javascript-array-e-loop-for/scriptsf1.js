@@ -1,4 +1,4 @@
-// valor serviços
+// valor serviços no array
 
 let menu = ['Home', 'Serviços', 'Portfólio', 'Links'];
 let menuServices = menu[1];

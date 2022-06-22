@@ -1,4 +1,4 @@
-// indice portfólio
+// indice portfólio no array
 
 let menu = ['Home', 'Serviços', 'Portfólio', 'Links'];
 let indexOfPortfolio = menu.indexOf('Portfólio');
