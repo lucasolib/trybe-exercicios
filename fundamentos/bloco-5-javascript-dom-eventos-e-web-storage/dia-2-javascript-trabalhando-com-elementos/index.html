@@ -19,5 +19,30 @@
         console.log(document.querySelector('#elementoOndeVoceEsta').nextSibling);
         console.log(document.querySelector('#elementoOndeVoceEsta').nextElementSibling);
         console.log(document.querySelector('#pai').lastElementChild.previousElementSibling);
-    </script>
+
+        let pai = document.querySelector('#pai');
+        let elementoOndeVoceEsta2 = document.createElement('section');
+        pai.appendChild(elementoOndeVoceEsta2);
+        elementoOndeVoceEsta2.id = 'elementoOndeVoceEsta2';
+        
+        let elementoOndeVoceEsta = document.querySelector('#elementoOndeVoceEsta');
+        let filhoDoElementoOndeVoceEsta = document.createElement('section');
+        elementoOndeVoceEsta.appendChild(filhoDoElementoOndeVoceEsta);
+        filhoDoElementoOndeVoceEsta.id = 'filhoDoElementoOndeVoceEsta';
+        
+        let primeiroFilhoDoFilho = document.querySelector('#primeiroFilhoDoFilho');
+        let filhoDoFilhoDoFilho = document.createElement('section');
+        primeiroFilhoDoFilho.appendChild(filhoDoFilhoDoFilho);
+        filhoDoFilhoDoFilho.id = 'filhoDoFilhoDoFilho';
+        
+        console.log(document.querySelector('#filhoDoFilhoDoFilho').parentNode.parentNode.nextElementSibling);
+
+        pai.removeChild(quartoEUltimoFilho);
+        pai.removeChild(terceiroFilho);
+        pai.removeChild(elementoOndeVoceEsta2);
+        elementoOndeVoceEsta.removeChild(filhoDoElementoOndeVoceEsta);
+        elementoOndeVoceEsta.removeChild(segundoEUltimoFilhoDoFilho);
+        primeiroFilhoDoFilho.removeChild(filhoDoFilhoDoFilho);
+        console.log(document.querySelectorAll('section'));
+        </script>
   </main>
