@@ -1,38 +1,23 @@
-let preferencias = [];
+//localStorage.clear();
 
-function bgColor(color) {
-    let body = document.querySelector('body');
-    body.style.backgroundColor = color;
-    preferencias.push(color);
+function pref(array) {
+  let preferencias = [];
+  let body = document.querySelector('body');
+  body.style.backgroundColor = array[0];
+  preferencias.push(array[0]);
+  body.style.color = array[1];
+  preferencias.push(array[1]);
+  body.style.fontSize = array[2];
+  preferencias.push(array[2]);
+  body.style.fontFamily = array[3];
+  preferencias.push(array[3]);
+  body.style.lineHeight = array[4];
+  preferencias.push(array[4]);
+  localStorage.setItem('pref', JSON.stringify(preferencias));
 }
-bgColor('antiquewhite');
+//pref(['pink', 'blue', '20px','sans-serif', '50px']);
 
-function color(color) {
-    let body = document.querySelector('body');
-    body.style.color = color;
-    preferencias.push(color);
+preferencias = JSON.parse(localStorage.getItem('pref'))
+  if (preferencias != null) {
+  pref(preferencias);
 }
-color('black');
-
-function fontSize(size) {
-    let body = document.querySelector('body');
-    body.style.fontSize = size;
-    preferencias.push(size);
-}
-fontSize ('18px');
-
-function fontFamily(font) {
-    let body = document.querySelector('body');
-    body.style.fontFamily = font;
-    preferencias.push(font);
-}
-fontFamily('serif');
-
-function lineHeigth(size) {
-    let body = document.querySelector('body');
-    body.style.lineHeight = size;
-    preferencias.push(size);
-}
-lineHeigth('20px');
-
-localStorage.setItem('pref' ,JSON.stringify(preferencias));
