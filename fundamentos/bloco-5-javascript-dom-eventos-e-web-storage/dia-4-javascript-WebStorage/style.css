@@ -1,0 +1,17 @@
+body {
+    background-color: antiquewhite;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#titulo {
+    font-size: 45px;
+}
+
+#pHeader {
+    font-size: 18px;
+}
+
+#titulo, #pHeader, #block {
+    text-align: center;
+    color: black;
+}
