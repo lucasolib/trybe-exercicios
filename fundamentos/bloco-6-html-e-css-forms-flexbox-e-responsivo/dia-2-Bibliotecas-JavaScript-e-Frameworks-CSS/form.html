@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <title>TrybeTrip</title>
+  </head>
+  <body class="p-3 mb-2 bg-dark text-white container">
+    <main>
+    <form action="" method="get">
+        <header class="text-bg-success p-3">
+        <h1 class="h1 text-center">Quer concorrer a uma viagem?</h1>
+        <p class="h5 text-dark text-center">Preencha o formulário e concorra ao TrybeTrip</p>
+        <p class="h5 text-dark text-center">Uma viagem totalmente paga pela Trybe? Parece até um sonho!!!</p>
+    </header>
+    <div>&nbsp;</div>
+      <div id="nameDiv" class="text-bg-light p-3">
+        <label for="nomeCompleto" class="form-label">Nome : </label>
+        <input
+          type="text"
+          name="Nome"
+          id="nomeCompleto"
+          class="form-control"
+          placeholder="Insira seu nome completo aqui"
+          maxlength="40"
+          minlength="10"
+        />
+      </div>
+      <br />
+      <div id="emailDiv" class="text-bg-light p-3">
+        <label for="email" class="form-label">Email : </label>
+        <input
+          type="email"
+          name="Email"
+          id="email"
+          class="form-control"
+          placeholder="Insira seu email aqui"
+          maxlength="50"
+          minlength="10"
+        />
+      </div>
+      <br />
+      <div id="radiosDiv" class="text-bg-light p-3">
+        <h3 id="titleRadio">Destino preferido:</h3>
+        <div class="form-check">
+        <input type="radio" name="option" id="option1" value="Opção 1" />
+        <label for="option1" id="labelop1">Cidade</label>
+      </div>
+      <div class="form-check">
+        <input type="radio" name="option" id="option2" value="Opção 2" />
+        <label for="option2" id="labelop2">Campo</label>
+      </div>
+        <div class="form-check">
+        <input type="radio" name="option" id="option3" value="Opção 3" />
+        <label for="option3" id="labelop3">Praia</label>
+      </div>
+      <div class="form-check">
+        <input type="radio" name="option" id="option4" value="Opção 4" />
+        <label for="option4" id="labelop4">Montanhas</label>
+      </div>
+      </div>
+      <div>&nbsp</div>
+      <div id="textAreaDiv" class="text-bg-light p-3">
+        <h3 id="titleAnswer">Por que você deveria ser a pessoa desenvolvedora a ganhar o concurso TrybeTrip?</h3>
+        <textarea
+          name="answer"
+          id="answer"
+          cols="30"
+          rows="10"
+          placeholder="Insira aqui sua resposta"
+          maxlength="500"
+        ></textarea>
+      </div>
+      <br />
+      <div id="dateDiv" class="text-bg-light p-3">
+        <h3 id="titleData">Qual a melhor data para realizar sua viagem?</h3>
+        <label for="date">Data : </label>
+        <input type="date" id="date" name="date" />
+      </div>
+      <br />
+      <div id="checkboxDiv">
+        <div class="form-check text-bg-light p-3">
+        <h3 id="titleAgree">Gostaria de receber outras incríveis oportunidades oferecidas pela Trybe?</h3>
+        <label for="agree">Concordo 1</label>
+        <input type="checkbox" id="agree" name="agree" />
+        </div>
+        <br />
+        <div class="form-check text-bg-light p-3">
+        <h3 id="titleAgree2">Concordo que imagens das minhas férias poderão ser usadas na divulgação de concursos futuros.</h3>
+        <label for="agree2">Concordo 2</label>
+        <input type="checkbox" id="agree2" name="agree2" />
+        </div>
+      </div>
+      <br />
+      <div id="buttons">
+        <input id="submit" type="submit" value="Enviar" class="btn btn-primary" />
+        <input id="clear" type="button" value="Limpar" class="btn btn-danger"/>
+      </div>
+    </form>
+  </main>
+    <script src="script.js" src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous" ></script>
+  </body>
+</html>
