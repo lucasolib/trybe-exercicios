@@ -4,7 +4,7 @@ const counter = document.querySelector('#contador');
 console.log(counter);
 let clickCount = 0;
 
-function contadorDeCliques () {
+const contadorDeCliques = () => {
   clickCount += 1;
   counter.innerText = `Cliques: ${clickCount}`;
 }
