@@ -71,5 +71,3 @@ const verifyPair = (obj, key, value) => {
   }
   return isEqual;
 };
-
-verifyPair(lesson1, 'numeroEstudantes', 20)
